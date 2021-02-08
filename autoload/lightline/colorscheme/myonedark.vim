@@ -11,7 +11,7 @@ let s:yellow = [ '#e5c07b', 180 ]
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}, 'command': {}}
 
 if lightline#colorscheme#background() ==# 'light'
-  " Light variant
+  " Light variant{{{
   let s:fg    = [ '#494b53', 238 ]
   let s:bg    = [ '#fafafa', 255 ]
   let s:gray1 = [ '#494b53', 238 ]
@@ -22,6 +22,7 @@ if lightline#colorscheme#background() ==# 'light'
   let s:p.inactive.left   = [ [ s:bg,  s:gray3 ], [ s:bg, s:gray3 ] ]
   let s:p.inactive.middle = [ [ s:gray3, s:gray2 ] ]
   let s:p.inactive.right  = [ [ s:bg, s:gray3 ] ]
+"}}}
 else
   " Dark variant
   let s:fg    = [ '#abb2bf', 145 ]
